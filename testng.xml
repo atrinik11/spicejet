@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sauce lab Test automation regression suite" parallel="tests">
+	<test thread-count="5" name=" Sauce Test - FF">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="MavenFullProject.spiceJet.SauceTest" />
+			<!-- <class name="MavenFullProject.spiceJet.AppTest"/>
+      <class name="MavenFullProject.spiceJet.baseTest"/>-->
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Sauce Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="MavenFullProject.spiceJet.SauceTest" />
+			<!-- <class name="MavenFullProject.spiceJet.AppTest"/>
+      <class name="MavenFullProject.spiceJet.baseTest"/>-->
+		</classes>
+	</test>
+</suite> <!-- Suite -->
